@@ -1,0 +1,47 @@
+{% extends 'core/plantilla.html' %}
+
+{% block content %}
+    <h1>Matechicos</h1>
+    <table>
+        <thead>
+            <tr>
+                <th>Que Tema Estas Buscando?</th>
+                <th></th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Numeros</td>
+                <td>
+                    <a href="{% url 'numeros' %}">
+                        <button>Ver videos</button>
+                    </a>
+                </td>
+            </tr>
+            <tr>
+                <td>Aritmética</td>
+                <td>
+                    <a href="{% url 'aritmetica' %}">
+                        <button>Ver videos</button>
+                    </a>
+                </td>
+            </tr>
+            <tr>
+                <td>Geometría</td>
+                <td>
+                    <a href="{% url 'geometria' %}">
+                        <button>Ver videos</button>
+                    </a>
+                </td>
+            </tr>
+            <tr>
+                <td>Conjuntos</td>
+                <td>
+                    <a href="{% url 'conjuntos' %}">
+                        <button>Ver videos</button>
+                    </a>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+{% endblock %}
